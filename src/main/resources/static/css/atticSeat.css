@@ -1,0 +1,95 @@
+html, body{ margin:0; height:100%; }
+
+.div_head{
+    background: black;
+    height: 3em;
+}
+
+.img_logo{
+}
+
+.span_title{
+    font-size: 1.3em;
+    color: white;
+}
+
+.div_logo_title{
+    width: 20em;
+    height: 100%;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.div_menu{
+    height: 100%;
+    width: 10%;
+    float: left;
+    background: #454545;
+}
+
+.span_menu{
+    color: #B8B8B8;
+    font-size: 0.8em;
+}
+
+.table_menu{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.td_menu_ico{
+    width: 2em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.td_menu_text{
+    padding-top: 1em;
+}
+
+
+.table_head{
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+}
+
+.td_head_logo{
+    vertical-align: center;
+    padding-left: 1em;
+}
+
+.td_head_text{
+    vertical-align: center;
+}
+
+tr:hover{
+    background-color:black ;
+    border-collapse: collapse;
+}
+
+.span_menu_title{
+    padding: 0.5em;
+    font-size: 1em;
+    color: #B8B8B8;
+    display: block;
+    border-bottom: 0.06em solid #F0EEF0;
+}
+
+.div_menu_content{
+    display: inline;
+    height: 100%;
+    width: 100%;
+}
+
+.div_content{
+    background: #666666;
+    width: 90%;
+    float: left;
+    height: 100%;
+}
+
+
+

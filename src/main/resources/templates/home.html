@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="http://www.sz886.com/js/jquery-1.9.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.1.3.css">
+  <link rel="stylesheet" href="css/manager.css">
+  <script src="js/manager.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100" style="">
+  <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
+    <p class="navbar-brand mb-0 text-white">
+      <i class="fa d-inline fa-connectdevelop"></i> 閣中座管理系统 </p>
+  </button>
+    <div class="collapse navbar-collapse" id="navbar14">
+      <!--注释掉图标
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" > <a class="nav-link" href="#">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Pricing</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+      </ul>
+-->
+      <p class="d-none d-md-block lead text-light mb-0 text-nowrap" style="margin:0 auto"> <i class="fa d-inline fa-lg fa-connectdevelop"></i> <b>閣中座后台管理系统</b> </p>
+      <!--注释掉图标
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-1"> <a class="nav-link" href="#">
+            <i class="fa fa-github fa-fw fa-lg" ></i>
+          </a> </li>
+        <li class="nav-item mx-1"> <a class="nav-link" href="#">
+            <i class="fa fa-gitlab fa-fw fa-lg"></i>
+          </a> </li>
+        <li class="nav-item mx-1"> <a class="nav-link" href="#">
+            <i class="fa fa-bitbucket fa-fw fa-lg"></i>
+          </a> </li>-->
+    </div>
+  </div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<div id="d1">
+  <button id="bt1" class="btn btn-link" style="font-size:20px" onclick="spread()">
+    <span class="fa fa-plus-square" id="s1"></span>
+  </button>
+  <b style="font-family:微软雅黑;" class="text-primary">座位管理</b>
+  <div id="d2" class="el">
+    <a onclick="loadSeats()" href="#" style="display:block;font-family:微软雅黑;background-color:#666;" class="text-center text-light" id="check">查看座位列表</a>
+    <a href="#" style="display:block;font-family:微软雅黑;background-color:#666;" class="text-center text-light" id="add">添加座位</a>
+    <a href="#" style="display:block;font-family:微软雅黑;background-color:#666;" class="text-center text-light" id="edit">修改座位</a>
+  </div>
+  <hr class="bg-primary" style="margin:auto;">
+  <button id="bt2" class="btn btn-link" style="font-size:20px">
+    <span class="fa fa-plus-square"></span>
+  </button>
+  <!--<a href="#" style="font-family:微软雅黑;" class="text-primary"><b>查看消息推送</b></a>-->
+  <!--<hr class="bg-primary" style="margin:auto;">-->
+  <!--<button id="bt3" class="btn btn-link" style="font-size:20px">-->
+    <!--<span class="fa fa-plus-square"></span>-->
+  <!--</button>-->
+  <a onclick="loadUsers()" href="#" style="font-family:微软雅黑;" class="text-primary"><b>学生信息管理</b></a>
+  <hr class="bg-primary" style="margin:auto;">
+</div>
+<div id="content">
+</div>
+</body>
+
+</html>

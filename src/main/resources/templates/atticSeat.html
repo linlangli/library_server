@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>閣中座后台管理系统</title>
+        <!--<script type="text/javascript" src="../static/js/AtticSeat.js"></script>-->
+        <script type="text/javascript" src="js/AtticSeat.js"></script>
+        <!--<link href="../static/css/atticSeat.css" rel="stylesheet" type="text/css" media="all" />-->
+        <link href="css/atticSeat.css" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="js/WebSockeTer.js"></script>
+        <script type="text/javascript" src="tool/layer/mobile/layer.js"></script>
+        <link rel="shortcut icon" href="img/app_logo.png">
+    </head>
+    <body onload="connect()">
+        <div class="div_head">
+            <table class="table_head">
+                <tr class="tr_head">
+                    <!--<td class="td_head_logo"><img class="img_logo" src="../static/img/logo.png"></td>-->
+                    <td class="td_head_logo"><img class="img_logo" src="img/logo.png"></td>
+                    <td class="td_head_text"><span class="span_title">閣中座后台管理系统</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="div_menu_content">
+            <div class="div_menu">
+                <span class="span_menu_title">座位管理</span>
+                <table class="table_menu">
+                    <tr class="tr_menu" onclick="loadSeats()">
+                        <!--<td class="td_menu_ico"><img src="../static/img/seat_manager.png"></td>-->
+                        <td class="td_menu_ico"><img src="img/seat_manager.png">
+                        <td class="td_menu_text"><span class="span_menu">座位列表</span></td>
+                    </tr>
+                    <tr class="tr_menu">
+                        <!--<td class="td_menu_ico"><img src="../static/img/add_seat.png"></td>-->
+                        <td class="td_menu_ico"><img src="img/add_seat.png"></td>
+                        <td class="td_menu_text" onclick="addSeat()"><span class="span_menu">添加座位</span></td>
+                    </tr>
+                    <tr class="tr_menu">
+                        <!--<td class="td_menu_ico"><img src="../static/img/add_seat.png"></td>-->
+                        <td class="td_menu_ico"><img src="img/add_seat.png"></td>
+                        <td class="td_menu_text" onclick="createCodes()"><span class="span_menu">生成二维码</span></td>
+                    </tr>
+                </table>
+                <table class="table_menu">
+                    <span class="span_menu_title">用户管理</span>
+                    <tr class="tr_menu" onclick="loadUsers()">
+                        <!--<td class="td_menu_ico"><img src="../static/img/user_manager.png"></td>-->
+                        <td class="td_menu_ico"><img src="img/user_manager.png"></td>
+                        <td class="td_menu_text"><span class="span_menu">用户列表</span></td>
+                    </tr>
+                </table>
+                <table class="table_menu">
+                    <span class="span_menu_title">帖子管理</span>
+                    <tr class="tr_menu" onclick="loadPosts()">
+                        <!--<td class="td_menu_ico"><img src="../static/img/user_manager.png"></td>-->
+                        <td class="td_menu_ico"><img src="img/user_manager.png"></td>
+                        <td class="td_menu_text"><span class="span_menu">帖子列表</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="content" class="div_content">
+
+            </div>
+        </div>
+    </body>
+</html>

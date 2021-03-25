@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="js/Index.js"></script>
+    <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="shortcut icon" href="img/app_logo.png">
+    <!--<script type="text/javascript" src="../static/js/Index.js"></script>-->
+    <!--<link href="../static/css/index.css" rel="stylesheet" type="text/css" media="all" />-->
+</head>
+<body>
+<div class="div_title">
+    <label class="label_title" onclick="changeIp()">阁中座管理系统</label>
+</div>
+<div class="div_login">
+    <form>
+        <ul>
+            <li class="li_login">
+                <input id="input_number"
+                        type="text"
+                        class="number"
+                        value="用户名"
+                        onfocus="this.value='';"
+                        onblur="if (this.value==''){this.value='用户名';}"
+                />
+            </li>
+            <li class="li_login">
+                <input id="input_pass"
+                        type="text"
+                        class="pass"
+                        value="密码"
+                        onfocus="this.value='';type='password';"
+                        onblur="if (this.value==''){this.value='密码';type='text';}"
+                />
+            </li>
+            <div class="div_checkbox">
+                <label class="label_remember">记住密码：<input id="checkbox_remember" type="checkbox" value=""/></label>
+                <label class="label_student">学生身份：<input id="checkbox_student" type="checkbox" value=""/></label>
+            </div>
+            <li class="li_login">
+                <button type="button" onclick="login()">登录</button>
+
+
+
+            </li>
+        </ul>
+    </form>
+</div>
+</body>
+</html>
